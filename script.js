@@ -10,7 +10,7 @@ for (var i = 9; i < 18; i++) {
     var hourDiv = $('<div>').addClass('hour');
     var pTimeEl = $('<p>').addClass('time').text(`${i}:00`);
     var toDo = $('<div>').addClass('to-do');
-    var textArea = $('<textarea>');
+    var textArea = $('<textarea>').val(localStorage.getItem(i));
     var savDiv = $('<div>').addClass('save');
     var saveBtn = $('<button>').addClass('saveBtn').attr('id', i)
         .on('click', function () {
@@ -22,16 +22,15 @@ for (var i = 9; i < 18; i++) {
         )
     var iClass = $('<i>').addClass('fa fa-save');
     $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
-        if (i < time) {
-            toDo.addClass('past')
-        }
-        else if (i === time) {
-            toDo.addClass('present')
-        }
-        else {
-            toDo.addClass('future')
-        }
-
+    if (i < time) {
+        toDo.addClass('past')
+    }
+    else if (i === time) {
+        toDo.addClass('present')
+    }
+    else {
+        toDo.addClass('future')
+    }
 }
 
 
