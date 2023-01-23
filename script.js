@@ -6,18 +6,11 @@ var hours = $('.hour');
 
 // current day displayed at top of calendar
 var today = moment().format("Do MMMM YYYY")
-$("#today").text(today);
-
-
-
-
-// Should rows be inputted by JQuery?
+$("#today").text(today);   
 
 // better to put time into the rows??
 var time = moment().hour();
-console.log(time)
-
-// var hours = [09, 10, 11, 12, 13, 14, 15, 16, 17];
+console.log(time);
 
 for (var i=9; i< 18; i++) {
     var section = $('<section>').addClass('this-hour');
@@ -27,6 +20,11 @@ for (var i=9; i< 18; i++) {
     var textArea = $('<textarea>');
     var savDiv = $('<div>').addClass('save');
     var saveBtn = $('<button>').addClass('saveBtn')
+    .on('click', function() {
+        
+
+    }
+    )
     $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
     var iClass = $('<i>').addClass('fa fa-save');
 
