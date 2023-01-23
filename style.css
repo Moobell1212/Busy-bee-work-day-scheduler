@@ -23,7 +23,7 @@ margin-top: 5px;}
   border-right: 1px solid black;
   width: 70px;
   font-size: 1.3rem;
-  padding-top: 30px;
+  padding-top: 35px;
   display: flex;
 }
 
@@ -60,12 +60,12 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #ff6961;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #d3d3d3;
   color: white;
 }
 
