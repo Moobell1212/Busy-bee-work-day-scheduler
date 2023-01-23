@@ -27,8 +27,8 @@ for (var i=9; i< 18; i++) {
         localStorage.setItem(hourKey, activity)
         }
     )
-    $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
     var iClass = $('<i>').addClass('fa fa-save');
+    $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
 }
 
 // make past hours and future colors different
