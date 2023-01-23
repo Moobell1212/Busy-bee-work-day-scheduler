@@ -1,5 +1,5 @@
 // current day displayed at top of calendar
-var today = moment().format("Do MMMM YYYY")
+var today = moment().format("Do MMMM YYYY");
 $("#today").text(today);
 
 // variable to provide the current hour when the website is running
@@ -26,19 +26,19 @@ for (var i = 9; i < 18; i++) {
         // console.log(activity)
         localStorage.setItem(hourKey, activity);
     }
-    )
+    );
     var iClass = $('<i>').addClass('fa fa-save');
     // appending all divs etc. into the section container to build rows for each hour
     $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
     // if loop to change colour for if the row hour is before, the same as, or after the current hour
     if (i < time) {
-        toDo.addClass('past')
+        toDo.addClass('past');
     }
     else if (i === time) {
-        toDo.addClass('present')
+        toDo.addClass('present');
     }
     else {
-        toDo.addClass('future')
+        toDo.addClass('future');
     }
 }
 
