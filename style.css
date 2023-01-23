@@ -24,6 +24,7 @@ margin-top: 5px;}
   width: 70px;
   font-size: 1.3rem;
   padding-top: 30px;
+  display: flex;
 }
 
 .to-do {width: 85%;}
