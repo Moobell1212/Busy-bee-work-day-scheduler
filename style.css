@@ -29,7 +29,7 @@ margin-top: 5px;}
 
 .to-do {width: 85%;}
 
-input {
+textarea {
   background: transparent;
   border: none;
   resize: none;
