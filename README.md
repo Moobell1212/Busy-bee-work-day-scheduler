@@ -18,7 +18,7 @@ When the user inputs into a specifc row, and presses the save button for that ro
 
 <img src="./images/input.png">
 
-Deployed site:
+Deployed site: https://moobell1212.github.io/Busy-bee-work-day-scheduler/
 
 ## License
 
