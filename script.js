@@ -22,9 +22,10 @@ console.log(time)
 for (var i=9; i< 18; i++) {
     var section = $('<section>').addClass('this-hour');
     var hourDiv = $('<div>').addClass('hour');
+    var pTimeEl = $('<p>').addClass('time').text(`${i}:00`);
     var toDo = $('<div>').addClass('to-do');
     var savDiv = $('<div>').addClass('save');
-    $('.container').append(section.append(hourDiv, toDo, savDiv));
+    $('.container').append(section.append(hourDiv.append(pTimeEl), toDo, savDiv));
 }
 
 // make past hours and future colors different
