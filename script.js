@@ -28,6 +28,8 @@ for (var i=9; i< 18; i++) {
     var savDiv = $('<div>').addClass('save');
     var saveBtn = $('<button>').addClass('saveBtn')
     $('.container').append(section.append(hourDiv.append(pTimeEl), toDo.append(textArea), savDiv.append(saveBtn.append(iClass))));
+    var iClass = $('<i>').addClass('fa fa-save');
+
 }
 
 // make past hours and future colors different
