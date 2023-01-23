@@ -24,6 +24,7 @@ for (var i=9; i< 18; i++) {
     var hourDiv = $('<div>');
     var toDo = $('<div>');
     var savDiv = $('<div>');
+    $('.container').append(section.append(hourDiv, toDo, savDiv));
 }
 
 // make past hours and future colors different
