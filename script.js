@@ -20,10 +20,10 @@ console.log(time)
 // var hours = [09, 10, 11, 12, 13, 14, 15, 16, 17];
 
 for (var i=9; i< 18; i++) {
-    var section = $('<section>');
-    var hourDiv = $('<div>');
-    var toDo = $('<div>');
-    var savDiv = $('<div>');
+    var section = $('<section>').addClass('this-hour');
+    var hourDiv = $('<div>').addClass('hour');
+    var toDo = $('<div>').addClass('to-do');
+    var savDiv = $('<div>').addClass('save');
     $('.container').append(section.append(hourDiv, toDo, savDiv));
 }
 
